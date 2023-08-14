@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Local storage</h1>
+
+    <!-- <script>
+
+        //localStorage.setItem("name", "Basanta")
+
+        localStorage.setItem("address", "samakushi")
+        localStorage.removeItem("name")
+
+        console.log(localStorage.getItem("address"));
+
+        localStorage.clear() //clear the data in the local storage of application
+
+    </script> -->
+
+
+    <div class="bodyform">
+        <label> Name:</label>
+        <input type="text" name="name" placeholder="Name" id="name" require><br>
+
+        <label> Email:</label>
+        <input type="text" name="email" placeholder="Email" id="email" require><br>
+
+        <label> Address:</label>
+        <input type="Address" name="address" placeholder="address" id="address" require><br>
+
+        <button id="btn">Save</button>
+       
+    </div>
+
+    <script>
+
+        let button = document.getElementById("btn")
+        button.onclick = ()=>{
+            let nameInput = document.getElementById("name").value;
+            let addressInput = document.getElementById("address").value;
+            let emailInput = document.getElementById("email").value;
+
+            localStorage.setItem("name",nameInput); 
+            localStorage.setItem("address",addressInput);
+            localStorage.setItem("Email",emailInput);
+
+        }
+    </script>
+
+
+    
+</body>
+</html>
